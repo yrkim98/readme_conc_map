@@ -23,16 +23,20 @@ The dataset is programmatically accessible via quilt, and is also browseable via
 ## Usage
 We understand this package is quite large and may not fit on your machine. Here is our list of methods for interacting with this package that work well for us and alleviate the package size burden. If you would like a deeper understanding of what all you can do with Quilt, please refer to their documentation.
 **To Load The Package**:
+
 `import quilt3`
 `pkg = quilt3.Package.browse("aics/concentration_map", registry="s3://allencell-internal-quilt")`
 
 You can use the quilt package (quilt3.Package) object to navigate around the dataset using dictionary accessors like so:
+
 `example_image = pkg["2020-05-26"]["ZSD1"]`
 
 To then download individual file to your local disk you can use the fetch function:
+
 `fetched_image = example_image.fetch("/2020-05-26/ZSD1/40x_zstack/")`
 
 You can also download the whole subfolder with the fetch function:
+
 `fetched_folder = example_image.fetch("/2020-05-26/ZSD1/40x_zstack/")`
 
 
