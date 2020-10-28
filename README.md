@@ -34,7 +34,7 @@ You can use the quilt package (quilt3.Package) object to navigate around the dat
 
 To then download individual file to your local disk you can use the fetch function:
 
-`fetched_image = sub_package.fetch("/100x_zstack/")
+`fetched_image = sub_package.fetch("/3500003928_100X_20200526_1-Scene-01-P1-B10.czi")
 
 You can also download the whole subfolder with the fetch function:
 
@@ -48,8 +48,8 @@ This dataset is large (2.8TB), so it is reccomended you only download the files 
 `p.fetch()`
 
 **For additional documenation on how to use and interact with this dataset please refer to** https://docs.quiltdata.com/walkthrough/reading-from-a-package.
-## List of Datasets
 
+## List of Datasets
  * \2020-05-26\ZSD1
  * \2020-05-26\LSM880-2
  * \2020-02-25\ZSD1
