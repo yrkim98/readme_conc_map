@@ -30,15 +30,15 @@ We understand this package is quite large and may not fit on your machine. Here 
 
 You can use the quilt package (quilt3.Package) object to navigate around the dataset using dictionary accessors like so:
 
-`example_image = pkg["2020-05-26"]["ZSD1"]`
+`sub_package = pkg["2020-05-26"]["ZSD1"]["100x_zstack"]
 
 To then download individual file to your local disk you can use the fetch function:
 
-`fetched_image = example_image.fetch("/2020-05-26/ZSD1/40x_zstack/")`
+`fetched_image = sub_package.fetch("/100x_zstack/")
 
 You can also download the whole subfolder with the fetch function:
 
-`fetched_folder = example_image.fetch("/2020-05-26/ZSD1/40x_zstack/")`
+`fetched_folder = example_image.fetch()  # Download whole folder at /2020-05-26/ZSD1/100x_zstack`
 
 
 This dataset is large (2.8TB), so it is reccomended you only download the files you need. However, the whole package can be downloaded:
