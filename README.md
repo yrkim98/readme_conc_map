@@ -22,6 +22,7 @@ The dataset is programmatically accessible via quilt, and is also browseable via
 
 ## Usage
 We understand this package is quite large and may not fit on your machine. Here is our list of methods for interacting with this package that work well for us and alleviate the package size burden. If you would like a deeper understanding of what all you can do with Quilt, please refer to their documentation.
+
 **To Load The Package**:
 
 `import quilt3`
