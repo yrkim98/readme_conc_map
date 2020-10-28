@@ -25,6 +25,7 @@ We understand this package is quite large and may not fit on your machine. Here 
 **To Load The Package**:
 
 `import quilt3`
+
 `pkg = quilt3.Package.browse("aics/concentration_map", registry="s3://allencell-internal-quilt")`
 
 You can use the quilt package (quilt3.Package) object to navigate around the dataset using dictionary accessors like so:
@@ -41,7 +42,9 @@ You can also download the whole subfolder with the fetch function:
 
 
 This dataset is large (2.8TB), so it is reccomended you only download the files you need. However, the whole package can be downloaded:
+
 `p = quilt3.Package.browse('aics/concentration_map', 's3://allencell-internal-quilt')`
+
 `p.fetch()`
 
 **For additional documenation on how to use and interact with this dataset please refer to** https://docs.quiltdata.com/walkthrough/reading-from-a-package.
